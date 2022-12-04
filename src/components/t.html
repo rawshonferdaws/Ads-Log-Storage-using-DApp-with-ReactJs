@@ -1,0 +1,38 @@
+ <div class="container-fluid">
+        <Navbar account={this.state.account} />
+        <div className="container-fluid mt-5">
+        <h1>Ad Company Login</h1>
+          <br/>
+          <div className="row">
+          
+        <form onSubmit={(event) => {
+          event.preventDefault()
+          const password = this.password.value
+          const email = this.email.value
+          
+          this.CheckLogin(email,password)
+        }}>
+           <div className="form-group mr-sm-2">
+            <input
+              id="email"
+              type="email"
+              ref={(input) => { this.email = input }}
+              className="form-control"
+              placeholder="Email"
+              required />
+          </div>
+         
+          <div className="form-group mr-sm-2">
+            <input
+              id="password"
+              type="password"
+              ref={(input) => { this.password = input }}
+              className="form-control"
+              placeholder="password"
+              required />
+          </div>
+          <button type="submit" className="btn btn-primary">Login</button>
+        </form>
+          </div>
+        </div>
+      </div>

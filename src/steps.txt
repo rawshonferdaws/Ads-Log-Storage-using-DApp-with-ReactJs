@@ -1,0 +1,6 @@
+1) start ganache
+2) goto metamask create 3 accounts BroadCaster,AdClient,AdSerter by taking private keys from 3 address of ganache
+3) truffle compile
+4) truffle migrate
+5) inanother terminal 
+6) npm start
